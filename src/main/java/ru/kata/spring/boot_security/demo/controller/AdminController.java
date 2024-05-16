@@ -12,12 +12,12 @@ import ru.kata.spring.boot_security.demo.service.UserService;
 import java.util.List;
 @RestController
 @RequestMapping("/api/admin")
-public class AdminRestController {
+public class AdminController {
 
     private final UserService userService;
     private final RoleService roleService;
 
-    public AdminRestController(UserService userService, RoleService roleService) {
+    public AdminController(UserService userService, RoleService roleService) {
         this.userService = userService;
         this.roleService = roleService;
     }

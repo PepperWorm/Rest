@@ -15,11 +15,9 @@ import java.util.List;
 @Transactional(readOnly = true)
 public class UserServiceImp implements UserService{
 
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
 
-    private PasswordEncoder passwordEncoder;
-
-    @Autowired
     public UserServiceImp(UserRepository userRepository, PasswordEncoder passwordEncoder) {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
