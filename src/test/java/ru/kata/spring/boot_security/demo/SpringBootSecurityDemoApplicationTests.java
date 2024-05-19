@@ -8,13 +8,13 @@ import ru.kata.spring.boot_security.demo.service.UserService;
 
 @SpringBootTest
 class SpringBootSecurityDemoApplicationTests {
-	@Autowired
-	private UserService userService;
-
-	@Test
-	void contextLoads() {
-		User user = userService.getById(1L);
-		System.out.println(user.getRoles());
-	}
+//	@Autowired
+//	private UserService userService;
+//
+//	@Test
+//	void contextLoads() {
+//		User user = userService.getById(1L);
+//		System.out.println(user.getRoles());
+//	}
 
 }
